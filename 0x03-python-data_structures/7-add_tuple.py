@@ -9,7 +9,6 @@ def des_tuple(tuple_=()):
         return (tuple_[0], tuple_[1])
 
 
-
 def add_tuple(tuple_a=(), tuple_b=()):
     sum_1 = 0
     sum_2 = 0
