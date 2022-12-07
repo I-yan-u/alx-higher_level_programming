@@ -14,6 +14,8 @@ def size_check(list_=[], num=0):
 def max_integer(my_list=[]):
     lent = len(my_list)
     temp = []
+    if lent == 0:
+        return None
     for idx in range(lent):
         size_check(temp, my_list[idx])
     return temp[0]
