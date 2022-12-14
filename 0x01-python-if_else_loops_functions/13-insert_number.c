@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * insert_node - Inserts node in sorted list
  * @head: The pointer to the head of the list
