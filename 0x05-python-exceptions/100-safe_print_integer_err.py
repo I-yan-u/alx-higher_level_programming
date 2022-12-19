@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sys.stderr import write
+import sys
 
 
 def safe_print_integer_err(value):
@@ -7,5 +7,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return True
     except Exception as Err:
-        write("Exception: " + str(Err) + "\n")
+        sys.stderr.write("Exception: " + str(Err) + "\n")
         return False
