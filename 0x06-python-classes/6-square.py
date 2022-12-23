@@ -91,4 +91,4 @@ class Square():
             for i in range(self.__position[1]):
                 print()
             for j in range(self.__size):
-                print("{}{}".format(" " * temp, "#" * self.__size))
+                print("{}{}".format("_" * temp, "#" * self.__size))
