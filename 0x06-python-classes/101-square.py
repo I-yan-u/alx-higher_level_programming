@@ -93,10 +93,10 @@ class Square():
             for j in range(self.__size):
                 print("{}{}".format(" " * temp, "#" * self.__size))
 
-
     def __str__(self):
-        """ Prints a # representation of the square """
-
+        """
+            Prints a # representation of the square
+        """
         sqr_str = ''
         if self.__size == 0:
             return sqr_str
