@@ -1,1 +1,5 @@
-# Python and Higher level Programming
+# Higher level programming
+
+- Pythom
+- SQL
+- Javascript
