@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const c_lang = 'C is fun';
+const cLang = 'C is fun';
 const python = 'Python is cool';
-const js_lang = 'JavaScript is amazing';
+const jsLang = 'JavaScript is amazing';
 
 console.log(c_lang);
 console.log(python);
