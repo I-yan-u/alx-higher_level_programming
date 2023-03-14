@@ -1,13 +1,6 @@
 #!/usr/bin/node
-
-let i;
-
-if (process.argv.length < 3) {
-    console.log("No Argument");
-} else if (process.argv.length === 3) {
-    console.log(process.argv[0]);
+if (process.argv.length <= 2 || process.argv[2] === undefined) {
+  console.log('No Argument');
 } else {
-    for (i = 2; i < process.argv.length; i++) {
-        console.log(process.argv[i]);
-    }
+  console.log(process.argv[2]);
 }
