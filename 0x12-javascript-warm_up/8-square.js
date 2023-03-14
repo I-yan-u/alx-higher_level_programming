@@ -10,7 +10,7 @@ if (isNaN(loopT)) {
   for (row = 0; row < loopT; row++) {
     let square = '';
     for (col = 0; col < loopT; col++) {
-      square += 'x';
+      square += 'X';
     }
     console.log(square);
   }
