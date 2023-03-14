@@ -5,7 +5,7 @@ let row;
 let col;
 
 if (isNaN(loopT)) {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 } else {
   for (row = 0; row < loopT; row++) {
     let square = '';
