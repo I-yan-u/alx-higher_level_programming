@@ -1,7 +1,5 @@
 #!/usr/bin/node
 class Rectangle {
-  width;
-  height;
   constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
@@ -9,7 +7,7 @@ class Rectangle {
     }
   }
   print () {
-    let row; let col;
+    let row, col;
     for (row = 0; row < this.height; row++) {
       let out = '';
       for (col = 0; col < this.width; col++) {
