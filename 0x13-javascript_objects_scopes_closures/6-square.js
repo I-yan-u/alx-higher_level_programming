@@ -5,6 +5,7 @@ class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
+
   charPrint (c = 'X') {
     let row; let col;
     for (row = 0; row < this.height; row++) {
