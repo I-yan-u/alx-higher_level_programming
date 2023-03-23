@@ -13,7 +13,7 @@ if __name__ == "__main__":
                                passwd=sys.argv[2], db=sys.argv[3])
 
         curs = link.cursor()
-        curs.execute("""SELECT * FROM states""")
+        curs.execute("""SELECT * FROM states ORDER BY states.id ASC""")
         for row in curs.fetchall():
             print(row)
         curs.close()
