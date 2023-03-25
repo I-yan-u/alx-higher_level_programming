@@ -17,6 +17,7 @@ if __name__ == "__main__":
         query = "SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC"
         curs.execute(query.format(sys.argv[4]))
         for row in curs.fetchall():
-            print(row)
+            if row[1] == sys.argv[4]:
+                print(row)
         curs.close()
         link.close()
