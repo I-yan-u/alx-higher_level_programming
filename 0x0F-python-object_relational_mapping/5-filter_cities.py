@@ -17,13 +17,13 @@ if len(sys.argv) > 3:
     query = "SELECT c.name, c.state_id, states.name FROM cities AS c \
         INNER JOIN states ON c.state_id = states.id \
         ORDER BY c.state_id ASC;"
-    
+
     query_list = []
     cur.execute(query)
     for row in cur.fetchall():
         if row[2] == sys.argv[4]:
             query_list.append(row[0])
-            out = ', '.join(query_list)
+    out = ', '.join(query_list)
     print(out)
 
     cur.close()
