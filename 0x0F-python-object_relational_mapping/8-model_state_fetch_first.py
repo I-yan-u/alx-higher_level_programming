@@ -23,6 +23,6 @@ if __name__ == "__main__":
 
     queue = session.query(State).order_by(State.id).first()
     if queue == None:
-            print("Nothing")
+        print("Nothing")
     else:
         print("{}: {}".format(queue.id, queue.name))
