@@ -21,8 +21,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    point = session.query(State).filter(
-        State.name.ilike('%a%')).order_by(State.id)
-    session.delete(point)
+    for point in session.query(State).filter(
+      State.name.ilike('%a%')).order_by(State.id):
+        session.delete(point)
     session.commit()
-    print("Not found")
