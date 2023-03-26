@@ -21,11 +21,11 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    loiu = State(name="Loiusiana")
+    loiu = State(name="Louisiana")
     session.add(loiu)
 
     session.commit()
-    new = session.query(State).filter(State.name == "Loiusiana").first()
+    new = session.query(State).filter(State.name == "Louisiana").first()
     if new:
         print("{}".format(new.id))
     else:
