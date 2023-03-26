@@ -26,4 +26,7 @@ if __name__ == "__main__":
 
     session.commit()
     new = session.query(State).filter(State.name == "Loiusiana").first()
-    print(new.id)
+    if new:
+        print("{}".format(new.id))
+    else:
+        print("Not found")
