@@ -22,7 +22,7 @@ if __name__ == "__main__":
     session = Session()
 
     row = session.query(State).filter(State.name == sys.argv[4]).first()
-    if row.name == sys.argv[4]:
+    if row:
         print("{}".format(row.id))
     else:
         print("Not found")
