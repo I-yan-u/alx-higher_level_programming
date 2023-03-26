@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     point = session.query(State).filter(State.id == 2).first()
     if point:
-       point.name = "New Mexico"
-       session.commit()
+        point.name = "New Mexico"
+        session.commit()
     else:
         print("Not found")
