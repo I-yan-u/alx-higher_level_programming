@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Get address details for address in sys.argv[1]
+Get header details for address in sys.argv[1]
 Using requests
 """
 import requests as re
