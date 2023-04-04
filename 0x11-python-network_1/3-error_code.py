@@ -10,7 +10,7 @@ import sys
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    req = ur.Request(url, data)
+    req = ur.Request(url)
 
     try:
         with ur.urlopen(req) as response:
