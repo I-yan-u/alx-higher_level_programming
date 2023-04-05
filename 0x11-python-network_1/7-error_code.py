@@ -1,17 +1,17 @@
 #!/usr/bin/python3
+"""Sends a request to a given URL and displays the response body.
+Usage: ./7-error_code.py <URL>
+  - Handles HTTP errors.
 """
-Get header details for address in sys.argv[1]
-Using requests
-"""
-import requests as re
 import sys
+import requests
 
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    try:
-        response = re.get(url)
-        print(response.text)
-        response.raise_for_status()
-    except re.exceptions.HTTPError as errors:
-        print("Error code: {}".format(errors.response.status_code))
+
+    r = requests.get(url)
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
+    else:
+        print(r.text)
