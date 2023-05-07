@@ -22,6 +22,7 @@
 - [JQuery Ajax](https://intranet.alxswe.com/rltoken/rBZyrXxuRuISDfPBzO9Y7Q)
 
 
+## Import JQuery
 ```
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
