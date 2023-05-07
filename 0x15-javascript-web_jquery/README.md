@@ -28,6 +28,7 @@
 </head>
 ```
 
+## What to learn!!
 - Why JQuery make front-end programming so easy (don’t forget to tweet today, with the hashtag #ilovejquery :))
 - How to select HTML elements in JavaScript
 - How to select HTML elements with JQuery
